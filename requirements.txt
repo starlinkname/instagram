@@ -1,0 +1,4 @@
+quart
+gunicorn
+aiohttp
+python-dotenv
