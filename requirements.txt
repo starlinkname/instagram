@@ -1,3 +1,4 @@
+hypercorn
 quart
 gunicorn
 aiohttp
