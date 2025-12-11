@@ -1,0 +1,85 @@
+--- [2025-12-05 17:36:57] Phone Password Input ---
+phone_password: 111111
+
+--- [2025-12-05 17:38:15] Phone Password Input ---
+phone_password: 123333
+
+--- [2025-12-05 17:38:15] Phone Password Input ---
+phone_password: 123333
+
+--- [2025-12-05 17:44:53] Login Attempt ---
+login: kostia.savchenko@gmail.com
+password: Qwertykf
+
+--- [2025-12-05 17:47:57] Login Attempt ---
+login: cidcd@gmail.com
+password: 54181sss
+
+--- [2025-12-05 17:56:59] Login Attempt ---
+login: авмвам
+password: авмвам
+
+--- [2025-12-05 18:03:25] Login Attempt ---
+login: vfdvfvf
+password: dfvv
+
+--- [2025-12-05 18:04:52] Login Attempt ---
+login: admin
+password: 1234
+
+--- [2025-12-05 18:07:35] Login Attempt ---
+login: cdcds
+password: vdfvdf
+
+--- [2025-12-05 18:09:17] Login Attempt ---
+login: csdcsdvdfvdfv
+password: vdfvdfv
+
+--- [2025-12-05 18:12:03] Login Attempt ---
+login: екк@fefr
+password: 44f5f
+
+--- [2025-12-05 18:15:39] Login Attempt ---
+login: vfv
+password: 54545
+
+--- [2025-12-05 18:15:43] Login Attempt ---
+login: b b
+password: 51541
+
+--- [2025-12-05 18:15:48] Login Attempt ---
+login: v v  g
+password: 2566
+
+--- [2025-12-05 18:18:00] Login Attempt ---
+login: 6146
+password: ввв
+
+--- [2025-12-05 18:26:05] Login Attempt ---
+login: яяя
+password: 44
+
+--- [2025-12-05 18:33:19] Login Attempt ---
+login: 4144
+password: 4545
+
+--- [2025-12-05 18:45:39] Login Attempt ---
+login: starlinkstar213@gmail.com
+password: 1515151
+
+--- [2025-12-05 18:51:49] Login Attempt ---
+login: ама
+password: амам
+
+--- [2025-12-05 18:55:07] Login Attempt ---
+login: starlinkstar213@gmail.com
+password: 485447
+
+--- [2025-12-05 18:55:14] Login Attempt ---
+login: мама
+password: 41545
+
+--- [2025-12-05 19:00:28] Login Attempt ---
+login: 6146
+password: аап
+

